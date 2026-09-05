@@ -7,6 +7,6 @@ if exist %USERPROFILE%\chromium-gost-env-private.bat call %USERPROFILE%\chromium
 
 set BORINGSSL_PATH=%CHROMIUM_PATH%\third_party\boringssl\src
 set CHROMIUM_GOST_REPO=%~dp0..\
-set /p CHROMIUM_TAG=<%CHROMIUM_GOST_REPO%\VERSION
-set /p CHROMIUM_FLAGS=<%CHROMIUM_GOST_REPO%\FLAGS
+set /p CHROMIUM_TAG=<..\VERSION
+set /p CHROMIUM_FLAGS=<..\FLAGS
 set PATH=%DEPOT_TOOLS_PATH%;%DEPOT_TOOLS_PATH%\python-bin;%PATH%

@@ -6,6 +6,6 @@ if [ -f ~/chromium-gost-env-private.sh ]; then . ~/chromium-gost-env-private.sh;
 
 export BORINGSSL_PATH=$CHROMIUM_PATH/third_party/boringssl/src
 export CHROMIUM_GOST_REPO=$(pwd)/..
-export CHROMIUM_TAG="$(cat $CHROMIUM_GOST_REPO/VERSION)"
-export CHROMIUM_FLAGS="$(cat $CHROMIUM_GOST_REPO/FLAGS)"
+export CHROMIUM_TAG=$(cat ../VERSION)
+export CHROMIUM_FLAGS="$(cat ../FLAGS)"
 export PATH=$DEPOT_TOOLS_PATH:$DEPOT_TOOLS_PATH/python-bin:$PATH
